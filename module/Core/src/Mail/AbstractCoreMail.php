@@ -153,4 +153,8 @@ abstract class AbstractCoreMail {
         return $this;
     }
 
+    public function send() {
+        $this->transport->send($this->message);
+    }
+
 }
