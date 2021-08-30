@@ -9,8 +9,26 @@ use Laminas\View\Model\ViewModel;
 
 class IndexController extends AbstractActionController
 {
-    public function indexAction()
+    public function registerAction()
     {
+        $this->layout()->setTemplate('user/layout/layout');
+
         return new ViewModel();
     }
+
+    public function recoveredPasswordAction() {
+        $this->layout()->setTemplate('user/layout/layout');
+
+        return new ViewModel();        
+    }
+
+    public function newPasswordAction() {
+        $this->layout()->setTemplate('user/layout/layout');
+        
+        return new ViewModel();        
+    }
+
+    public function confirmedEmailAction() {
+        return new ViewModel();        
+    }   
 }
